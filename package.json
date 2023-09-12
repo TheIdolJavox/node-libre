@@ -1,0 +1,22 @@
+{
+  "name": "libre-node",
+  "version": "1.0.0",
+  "description": "Mueve a Pac-Man mediante el botón que se encuentra debajo.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheIdolJavox/node-libre.git"
+  },
+  "keywords": [
+    "Pac-Man"
+  ],
+  "author": "Oswaldo España",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/TheIdolJavox/node-libre/issues"
+  },
+  "homepage": "https://github.com/TheIdolJavox/node-libre#readme"
+}
