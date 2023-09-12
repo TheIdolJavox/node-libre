@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mueve a Pac-Man</title>
+    <style>
+        #container {
+            width: 1000px;
+            height: 50px;
+            position: relative;
+            background-color: blue;
+        }
+
+        #pacman {
+    width: 50px;
+    height: 50px;
+    background-color: yellow; /* Color amarillo para Pac-Man */
+    border-radius: 50%; /* Border-radius para hacerlo parecer Pac-Man */
+    position: absolute;
+    transition: 0.5s; /* Animación de transición para el movimiento */
+    clip-path: polygon(50% 50%, 100% 100%, 0% 100%, 0% 0%, 100% 0%); /* Clip-path para la forma del cuerpo */
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>Mover el balón</h1>
+    <div id="container">
+        <div id="pacman"></div>
+    </div>
+    <button id="moveButton">Mover balón</button>
+    <script>
+        // JavaScript en el navegador
+        const moveButton = document.getElementById('moveButton');
+        const pacman = document.getElementById('pacman');
+
+        let leftPosition = 0;
+
+        moveButton.addEventListener('click', () => {
+            leftPosition += 10;
+            pacman.style.left = `${leftPosition}px`;
+        });
+    </script>
+</body>
+</html>
